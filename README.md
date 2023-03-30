@@ -1,3 +1,4 @@
+![My Image](img1.png)
 # AI Voice Assistant for Blind Developers
 
 
