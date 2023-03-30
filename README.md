@@ -16,6 +16,23 @@ This repository contains the source code for an AI-powered voice assistant desig
 - Chat Gpt (alternative)
 - Pexels API
 
+## Installation
+Clone the repository:
+```sh
+git clone https://github.com/your-username/your-repo.git
+```
+## Install the required dependencies:
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+Run the main script:
+```sh
+python main.py
+```
+Follow the voice prompts to describe your concept and start creating your presentation.
+
 ## Future Development
 - Adding more features to enhance accessibility and productivity for blind developers.
 - Improving the accuracy and efficiency of the ChatGpt integration.
