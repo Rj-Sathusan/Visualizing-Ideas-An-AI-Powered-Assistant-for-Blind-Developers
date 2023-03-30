@@ -18,7 +18,7 @@ This repository contains the source code for an AI-powered voice assistant desig
 - Navigate through the presentation using voice commands such as "Start Presentation", "Next Slide", "Previous Slide", and "Close".
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 
- <img src="img3.png" alt="Project Banner" >
+ <img src="img4.png" alt="Project Banner" >
 
 ## Technologies Used
 - Python
