@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="img1.png" alt="Project Banner" width="50%">
+    <img src="img1.png" alt="Project Banner" width="30%">
 </div>
   
 # AI Voice Assistant for Blind Developers
