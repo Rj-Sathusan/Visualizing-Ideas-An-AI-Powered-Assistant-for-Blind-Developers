@@ -1,8 +1,8 @@
-![My Image](img1.png)
 # AI Voice Assistant for Blind Developers
 
-
 This repository contains the source code for an AI-powered voice assistant designed specifically for blind developers. The voice assistant can help them create professional-looking PowerPoint presentations without the need for visual aids, and can even engage in unlimited knowledge conversations through the ChatGpt integration.
+
+![My Image](img1.png)
 
 ## Features
 - Create professional PowerPoint presentations using voice commands.
