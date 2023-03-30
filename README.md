@@ -19,7 +19,7 @@ This repository contains the source code for an AI-powered voice assistant desig
 ## Installation
 Clone the repository:
 ```sh
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/Rj-Sathusan/Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers
 ```
 ## Install the required dependencies:
 ```sh
