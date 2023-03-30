@@ -15,3 +15,13 @@ This repository contains the source code for an AI-powered voice assistant desig
 - Pptx module
 - Chat Gpt (alternative)
 - Pexels API
+
+## Future Development
+- Adding more features to enhance accessibility and productivity for blind developers.
+- Improving the accuracy and efficiency of the ChatGpt integration.
+
+## Contributing
+Contributions are welcome! Please read the Contributing Guidelines before submitting a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
