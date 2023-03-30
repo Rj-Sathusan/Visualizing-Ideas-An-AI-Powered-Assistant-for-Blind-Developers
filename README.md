@@ -3,7 +3,7 @@
 </div>
   
  <div align="center">
-# AI Voice Assistant for Blind Developers
+<h1> AI Voice Assistant for Blind Developers <h1>
 </div>
 
   
