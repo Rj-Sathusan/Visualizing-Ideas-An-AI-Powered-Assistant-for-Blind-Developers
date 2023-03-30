@@ -4,8 +4,8 @@
   
  <div align="center">
 <h1> 
-Visualizing Ideas AI Voice Assistant for Blind Developers <h1>
-<h9>Progress...<h9>
+Visualizing Ideas AI Voice Assistant for Blind Developers </h1>
+<p>Progress...</p>
 </div>
 
   
