@@ -1,6 +1,6 @@
 <div align="center">
     <img src="img1.png" alt="Project Banner" width="50%">
-  </a>
+</div>
   
 # AI Voice Assistant for Blind Developers
 
