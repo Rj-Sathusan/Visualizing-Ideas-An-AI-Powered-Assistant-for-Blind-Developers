@@ -6,7 +6,7 @@ import datetime
 import winsound
 
 
-# Initialize recognizer instance Test
+# -Initialize recognizer instance 
 r = sr.Recognizer()
 
 engine = pyttsx3.init('sapi5')

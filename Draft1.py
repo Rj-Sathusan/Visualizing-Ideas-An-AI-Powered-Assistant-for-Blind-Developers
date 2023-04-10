@@ -1,6 +1,6 @@
 import re
 
-text = '''<!-- Partie Fatoumata -->
+text = '''<!--- Partie Fatoumata -->
   <div class="main position-absolute min-vh-100 end-0 d-flex flex-column justify-content-between align-items-center">
     <div class="container_main mt- text-center d-flex flex-column justify-content-center align-items-center"></div>
 
