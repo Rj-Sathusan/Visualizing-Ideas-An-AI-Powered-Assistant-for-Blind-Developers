@@ -1,0 +1,16 @@
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Debug\Krypton_Toolkit_Demo.exe.config
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\Krypton_Toolkit_Demo.exe
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGen.Login.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGen.Front.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGen.Sign_Up.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGen.Knowdlage.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGen.Form2.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\Krypton_Toolkit_Demo.Properties.Resources.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\IdeaGean.csproj.GenerateResource.Cache
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Debug\Krypton_Toolkit_Demo.exe
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Debug\Krypton_Toolkit_Demo.pdb
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Debug\Mysql.Data.dll
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Debug\Krypton_Toolkit_Demo.pdb
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\IdeaGean\bin\Debug\Krypton_Toolkit_Demo.exe.config
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\IdeaGean\obj\Debug\Krypton_Toolkit_Demo.exe
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\IdeaGean\obj\Debug\Krypton_Toolkit_Demo.pdb

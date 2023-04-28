@@ -1,0 +1,8 @@
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\bin\Release\Krypton_Toolkit_Demo.exe.config
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Login.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Front.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Sign_Up.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Form3.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Form2.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.Properties.Resources.resources
+C:\Users\Rj_Sathusan\Downloads\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\Krypton_Toolkit_Demo\obj\Release\Krypton_Toolkit_Demo.csproj.GenerateResource.Cache

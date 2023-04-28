@@ -10,7 +10,7 @@ import subprocess
 
 # Define the command to start Chrome with remote debugging
 chrome_cmd = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
-chrome_args = '-remote-debugging-port=9235 -user-data-dir=C:/Users/Rj_Sathusan/Desktop/Final Project/Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers/chromeprofile --window-size=50,50'
+chrome_args = '-remote-debugging-port=9235 -user-data-dir=C:/Users/Rj_Sathusan/Desktop/Final Project/Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers/chromeprofile --headless'
 chrome_full_cmd = f'"{chrome_cmd}" {chrome_args}'
 
 # Start Chrome with remote debugging using subprocess
@@ -19,10 +19,11 @@ chrome_proc = subprocess.Popen(chrome_full_cmd)
 
 
 # Set the path to the chromedriver.exe file
-chrome_driver_path = r'C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\chromedriver.exe'
+chrome_driver_path = r'C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\chromedriver.ex'
 
 # Set the debugger address option
 chrome_options = webdriver.ChromeOptions()
+#chrome_options.add_argument("--headless")
 chrome_options.add_experimental_option("debuggerAddress", "localhost:9235")
 
 # Create a new instance of the Chrome driver with the options
