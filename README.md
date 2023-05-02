@@ -17,8 +17,9 @@ diversity in the professional landscape.
 
 ## Features
 - Access unlimited knowledge through conversations using the ChatGpt integration.
-- Create professional PowerPoint presentations,Proposels using voice commands.
-- Generate suitable content such as titles, images, and notes based on user description.
+- Create professional PowerPoint presentations,Proposels with suitable images using voice commands.
+- Ability to automatically join meetings
+- Communicate and get information by enabling contact with anyone.
 - Navigate through the presentation using voice commands such as "Start Presentation", "Next Slide", "Previous Slide", and "Close".
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 
