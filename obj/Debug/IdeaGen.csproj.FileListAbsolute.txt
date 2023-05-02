@@ -28,3 +28,6 @@ C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assis
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\IdeaGen_Dotnet\bin\Debug\Krypton_Toolkit_Demo.exe.config
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\IdeaGen_Dotnet\obj\Debug\Krypton_Toolkit_Demo.exe
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\IdeaGen_Dotnet\obj\Debug\Krypton_Toolkit_Demo.pdb
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\bin\Debug\Krypton_Toolkit_Demo.exe.config
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.exe
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.pdb
