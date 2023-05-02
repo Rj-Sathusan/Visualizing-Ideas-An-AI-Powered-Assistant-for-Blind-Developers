@@ -6,29 +6,31 @@
 <h1> 
 Visualizing Ideas AI Voice Assistant for Blind Developers </h1>
 
-</div>
+</div> 
+This project aims to create an AI voice assistant that will enable blind developers to produce PowerPoint reports and presentations without visual assistance. It aims to enhance the accessibility of visual materials and promote better communication and collaboration among visually impaired individuals in the workforce. By removing barriers to effective communication and enabling blind developers to showcase their ideas and concepts, this project seeks to promote inclusivity and 
+diversity in the professional landscape.
 
-  
-This repository contains the source code for an AI-powered voice assistant designed specifically for blind developers. The voice assistant can help them create professional-looking PowerPoint presentations without the need for visual aids, and can even engage in unlimited knowledge conversations through the ChatGpt integration.
 <div align="center">
 <p><b>In Progress...</b></p>
 </div>
- <img src="img2.png" alt="Project Banner" >
+ <img src="Resources/Readme1.png" alt="Project Banner" >
 
 ## Features
-- Create professional PowerPoint presentations using voice commands.
-- Generate suitable content such as titles, images, and notes based on user description.
 - Access unlimited knowledge through conversations using the ChatGpt integration.
+- Create professional PowerPoint presentations,Proposels using voice commands.
+- Generate suitable content such as titles, images, and notes based on user description.
 - Navigate through the presentation using voice commands such as "Start Presentation", "Next Slide", "Previous Slide", and "Close".
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 
- <img src="img4.png" alt="Project Banner" >
+ <img src="Resources/Readme2.png" alt="Project Banner" >
 
 ## Technologies Used
-- Python
-- Pptx module
+- Python 3.8 or higher and C# 8 or higher
+- Google Cloud Speech, Beautifulsoup Modules
+- 1Secmail and Pexels APIs
 - Chat Gpt (alternative)
 - Pexels API
+- MySQL for the database
 
 ## Installation
 Clone the repository:
@@ -46,6 +48,13 @@ Run the main script:
 python main.py
 ```
 Follow the voice prompts to describe your concept and start creating your presentation.
+
+## Objectives
+- Examine the problem domain and available technology critically.
+- Create an accessible AI voice assistant system for blind developers. 
+- Research and use voice recognition and text-to-speech technologies.
+- Test the effectiveness and usability of the suggested system.
+- Create thorough project documentation.
 
 ## Future Development
 - Adding more features to enhance accessibility and productivity for blind developers.
