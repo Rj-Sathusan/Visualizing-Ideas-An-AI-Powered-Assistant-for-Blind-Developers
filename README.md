@@ -7,12 +7,10 @@
 Visualizing Ideas AI Voice Assistant for Blind Developers </h1>
 
 </div> 
-This project aims to create an AI voice assistant that will enable blind developers to produce PowerPoint reports and presentations without visual assistance. It aims to enhance the accessibility of visual materials and promote better communication and collaboration among visually impaired individuals in the workforce. By removing barriers to effective communication and enabling blind developers to showcase their ideas and concepts, this project seeks to promote inclusivity and 
-diversity in the professional landscape.
+This project intends to develop an artificial intelligence voice assistant that can assist blind engineers in visualizing their concepts and ideas by using voice commands to produce PowerPoint presentations and reports without visual assistance. It aims to enhance the accessibility of visual materials and promote better communication and collaboration among visually impaired individuals in the workforce. By removing barriers to effective communication and enabling blind developers to showcase their ideas and concepts, this project seeks to promote inclusivity and 
+diversity in the professional landscape. <b>[In Progress...]</b>
 
-<div align="center">
-<p><b>In Progress...</b></p>
-</div>
+
  <img src="Resources/Readme1.png" alt="Project Banner" >
 
 ## Features
