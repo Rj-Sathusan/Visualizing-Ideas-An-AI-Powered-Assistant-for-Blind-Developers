@@ -1,29 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data.SqlClient;
-using System.Windows.Forms;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Drawing;
-using System.IO;
-using System.Dynamic;
-using System.Windows;
-using MySql.Data.MySqlClient;
-using System.Threading;
 using System.Globalization;
+using System.Windows.Forms;
 
 
 
-namespace Krypton_Toolkit_Demo.DAL
+namespace IdeaGen.DAL
 {
     class function_
     {
-         public double  totalamount { get; set; }
-         string i = Configurations.Config.ConnectionString;// @"server=127.0.0.1;user id=root;database=hardwear;default command timeout=1000";//arifpos
-        
-     
-      //  string i = @"database='hardwear'; datasource='192.168.8.15'; username='root'; password='12345';default command timeout=1000";
+        public double totalamount { get; set; }
+        string i = Configurations.Config.ConnectionString;// @"server=127.0.0.1;user id=root;database=hardwear;default command timeout=1000";//arifpos
+
+
+        //  string i = @"database='hardwear'; datasource='192.168.8.15'; username='root'; password='12345';default command timeout=1000";
         public string caranceformat(double amount)
         {
             return String.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N2}", amount);
@@ -107,7 +99,7 @@ namespace Krypton_Toolkit_Demo.DAL
 
         }
 
-        public void CalculateAmountByUsingDatagridviewithCondi(DataGridView dgv, int columindes,Label laselesitem,Label laselseqty)
+        public void CalculateAmountByUsingDatagridviewithCondi(DataGridView dgv, int columindes, Label laselesitem, Label laselseqty)
         {
             totalamount = 0; double saqty = 0;
             for (int a = 0; dgv.Rows.Count > a; a++)
@@ -135,7 +127,7 @@ namespace Krypton_Toolkit_Demo.DAL
         }
 
 
-        public void GetReturnQtyAndItems(DataGridView dgv, int columindes,Label reitem,Label reqty)
+        public void GetReturnQtyAndItems(DataGridView dgv, int columindes, Label reitem, Label reqty)
         {
             totalamount = 0; double rtqty = 0;
             for (int a = 0; dgv.Rows.Count > a; a++)
@@ -150,7 +142,7 @@ namespace Krypton_Toolkit_Demo.DAL
             reqty.Text = rtqty.ToString();
         }
 
-        public double CalculateGrossAmount(DataGridView dgv, int saleuntipriceindex,int retunenettotalintex,int qtyintex)
+        public double CalculateGrossAmount(DataGridView dgv, int saleuntipriceindex, int retunenettotalintex, int qtyintex)
         {
             totalamount = 0; double retunamount = 0;
             for (int a = 0; dgv.Rows.Count > a; a++)
@@ -162,14 +154,14 @@ namespace Krypton_Toolkit_Demo.DAL
                 else
                 {
                     totalamount += Convert.ToDouble(dgv.Rows[a].Cells[retunenettotalintex].Value.ToString());
-               
+
                 }
 
             }
             return totalamount;
         }
 
-        public double CalculateAmountByUsingDatagridviewithCondiWithCountOtherColum(DataGridView dgv, int columindes,int columother)
+        public double CalculateAmountByUsingDatagridviewithCondiWithCountOtherColum(DataGridView dgv, int columindes, int columother)
         {
             totalamount = 0;
             for (int a = 0; dgv.Rows.Count > a; a++)
@@ -199,17 +191,18 @@ namespace Krypton_Toolkit_Demo.DAL
 
         public void FistLeterCapita(TextBox tb)
         {
-            try {
-               
+            try
+            {
+
                 // Creates a TextInfo based on the "en-US" culture.
                 TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
 
                 // Changes a string to titlecase.
                 tb.Text = textInfo.ToTitleCase(tb.Text.Trim());
-                
+
             }
             catch { }
-        
+
         }
         public void DataHandel(string sql)
         {
@@ -238,7 +231,7 @@ namespace Krypton_Toolkit_Demo.DAL
 
                 con.Close();
             }
-            catch  { }
+            catch { }
 
         }
 
@@ -295,22 +288,22 @@ namespace Krypton_Toolkit_Demo.DAL
         public DataTable dataTable(string sql)
         {
 
-                 DataTable table = new DataTable();
-           
-                MySqlConnection con = new MySqlConnection(i);
-                MySqlDataAdapter cmd = new MySqlDataAdapter(sql, con);
+            DataTable table = new DataTable();
 
-                con.Open();
-                cmd.Fill(table);
-                con.Close();
+            MySqlConnection con = new MySqlConnection(i);
+            MySqlDataAdapter cmd = new MySqlDataAdapter(sql, con);
 
-                return table;
-           
+            con.Open();
+            cmd.Fill(table);
+            con.Close();
+
+            return table;
+
 
 
         }
 
-        
+
         public double GetSingleValue(string sql)
         {
             //you shoud use try,catch block combobox selected index
@@ -348,8 +341,8 @@ namespace Krypton_Toolkit_Demo.DAL
 
 
         }
-       
-     
+
+
 
         public void LableTransferant(Label[] lebel, PictureBox picBox)
         {
@@ -395,7 +388,7 @@ namespace Krypton_Toolkit_Demo.DAL
         public void askmessage(string sql)
         {
 
-            DialogResult dialog = MessageBox.Show( " \t Do You Want To Delete ?","Conform Message", MessageBoxButtons.YesNo);
+            DialogResult dialog = MessageBox.Show(" \t Do You Want To Delete ?", "Conform Message", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
                 function_ fun = new function_();
@@ -404,7 +397,7 @@ namespace Krypton_Toolkit_Demo.DAL
             }
             else if (dialog == DialogResult.No)
             {
-               
+
             }
 
 
@@ -414,7 +407,7 @@ namespace Krypton_Toolkit_Demo.DAL
         }
         public void InputNumberWithSub(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.'  || e.KeyChar==45) )
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == '.' || e.KeyChar == 45))
             { e.Handled = true; }
             TextBox txtDecimal = sender as TextBox;
             if (e.KeyChar == '.' && txtDecimal.Text.Contains("."))
@@ -443,10 +436,11 @@ namespace Krypton_Toolkit_Demo.DAL
                 e.Handled = true;
             }
         }
-        public void checkString(KeyPressEventArgs e, TextBox txt) {
-            if (e.KeyChar >= 48 && e.KeyChar <= 57 || e.KeyChar == 46 || e.KeyChar == 8 )//true or false
+        public void checkString(KeyPressEventArgs e, TextBox txt)
+        {
+            if (e.KeyChar >= 48 && e.KeyChar <= 57 || e.KeyChar == 46 || e.KeyChar == 8)//true or false
             {
-                if (txt.Text.Contains(".") && e.KeyChar == 46 )
+                if (txt.Text.Contains(".") && e.KeyChar == 46)
                 {
                     e.Handled = true;
                 }
@@ -457,15 +451,15 @@ namespace Krypton_Toolkit_Demo.DAL
             }
             else
             {
-                
-                    e.Handled = true;
-             
+
+                e.Handled = true;
+
             }
         }
 
         public void checkStringWithOutPoint(KeyPressEventArgs e, TextBox txt)
         {
-            if (e.KeyChar >= 48 && e.KeyChar <= 57  || e.KeyChar == 8)//true or false
+            if (e.KeyChar >= 48 && e.KeyChar <= 57 || e.KeyChar == 8)//true or false
             {
                 e.Handled = false;
             }
@@ -478,14 +472,14 @@ namespace Krypton_Toolkit_Demo.DAL
 
         public void checkStringwithsub(KeyPressEventArgs e, TextBox txt)
         {
-            if (e.KeyChar >= 48 && e.KeyChar <= 57 || e.KeyChar == 46 || e.KeyChar == 8 ||e.KeyChar==45)//true or false
+            if (e.KeyChar >= 48 && e.KeyChar <= 57 || e.KeyChar == 46 || e.KeyChar == 8 || e.KeyChar == 45)//true or false
             {
                 if (txt.Text.Contains(".") && e.KeyChar == 46)
                 {
                     e.Handled = true;
                 }
                 else
-                {                    
+                {
 
                     if (txt.Text.Contains("-") && e.KeyChar == 45)
                     {
@@ -496,9 +490,9 @@ namespace Krypton_Toolkit_Demo.DAL
                         e.Handled = false;
                     }
                 }
-              
-               
-               
+
+
+
             }
             else
             {
@@ -516,22 +510,23 @@ namespace Krypton_Toolkit_Demo.DAL
             {
                 e.Handled = true;
             }
-        
-        
+
+
         }
-        public void AddMessage() { MessageBox.Show("Data Saved Successfuly !!!","Add Message",MessageBoxButtons.OK,MessageBoxIcon.Information); }
+        public void AddMessage() { MessageBox.Show("Data Saved Successfuly !!!", "Add Message", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         public void EditMessge() { MessageBox.Show("Data Updated Successfuly !!!", "Update Message", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         public void DeleteMessge() { MessageBox.Show("Data Deleted Successfuly !!!", "Delete Message", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         public void validationMessge(string validate) { MessageBox.Show(validate, "Warnig Message", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         public void ErrorMessge(string validate) { MessageBox.Show(validate, "Warnig Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         public void WwarningMessge(string validate) { MessageBox.Show(validate, "Warnig Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); }
-     
-        public void listboxclear(ListBox listname) {
+
+        public void listboxclear(ListBox listname)
+        {
             for (int i = 0; i < listname.Items.Count; i++) { listname.Items.RemoveAt(i); i--; }
         }
         public void comboboxclear(ComboBox comname) { for (int i = 0; i < comname.Items.Count; i++) { comname.Items.RemoveAt(i); i--; } }
 
-        public void getStock(string sql, TextBox currentbox, TextBox currentpieces, int pie,TextBox total_pie)
+        public void getStock(string sql, TextBox currentbox, TextBox currentpieces, int pie, TextBox total_pie)
         {
             function_ fun = new function_();
             int curentbox, currentpies;
@@ -564,11 +559,11 @@ namespace Krypton_Toolkit_Demo.DAL
             {
                 if (Con == "Warning")
                 {
-                    MessageBox.Show(message,Configurations. Config.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(message, Configurations.Config.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else if (Con == "Information")
                 {
-                    MessageBox.Show(message,Configurations. Config.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show(message, Configurations.Config.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else if (Con == "Error")
                 {
@@ -583,17 +578,18 @@ namespace Krypton_Toolkit_Demo.DAL
         }
         public void getData(AutoCompleteStringCollection dataCollection, string sql)
         {
-            try{
-           
-            MySqlCommand command;
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataSet ds = new DataSet();
+            try
+            {
 
-         
-            MySqlConnection connection = new MySqlConnection(Configurations.Config.ConnectionString);
-          
+                MySqlCommand command;
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DataSet ds = new DataSet();
+
+
+                MySqlConnection connection = new MySqlConnection(Configurations.Config.ConnectionString);
+
                 connection.Open();
-                command = new MySqlCommand(sql,connection);
+                command = new MySqlCommand(sql, connection);
                 adapter.SelectCommand = command;
                 adapter.Fill(ds);
                 adapter.Dispose();
@@ -609,15 +605,15 @@ namespace Krypton_Toolkit_Demo.DAL
                 MessageBox.Show(ex.Message);
             }
         }
-    
-                
-        
-        
-        
-        
-        
-    
+
+
+
+
+
+
+
+
     }
 
-    
+
 }

@@ -29,5 +29,15 @@ C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assis
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\IdeaGen_Dotnet\obj\Debug\Krypton_Toolkit_Demo.exe
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\IdeaGen_Dotnet\obj\Debug\Krypton_Toolkit_Demo.pdb
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\bin\Debug\Krypton_Toolkit_Demo.exe.config
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\bin\Debug\Krypton_Toolkit_Demo.exe
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\bin\Debug\Krypton_Toolkit_Demo.pdb
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.Form2.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.Properties.Resources.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.csproj.GenerateResource.cache
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.exe
 C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\Krypton_Toolkit_Demo.pdb
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.Sign_Up.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.Login.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.Front.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.Knowdlage.resources
+C:\Users\Rj_Sathusan\Desktop\Final Project\Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers\obj\Debug\IdeaGen.csprojResolveAssemblyReference.cache

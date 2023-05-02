@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Krypton_Toolkit_Demo.Configurations
+﻿namespace IdeaGen.Configurations
 {
     class Config
     {
@@ -13,11 +7,11 @@ namespace Krypton_Toolkit_Demo.Configurations
         public static int Branchid;
 
         public static string ApplicationName = "IdeaGen";
-        public static bool isZeroQty=false;
-        public static bool isRetailSale=true;
-        public static bool isSalesAmountChange=true;
-        public static bool isItemDiscountPercentage=false;
-        public static bool isSalesReturn=false;
+        public static bool isZeroQty = false;
+        public static bool isRetailSale = true;
+        public static bool isSalesAmountChange = true;
+        public static bool isItemDiscountPercentage = false;
+        public static bool isSalesReturn = false;
 
         public static bool isPrinter80mm = true
             ;
@@ -26,7 +20,7 @@ namespace Krypton_Toolkit_Demo.Configurations
         public static bool isStaffWiseSaleCom = false;
         public static bool isInvoiceWiseSaleCom = false;
 
-        public static bool isAskPrintMessage =true;
+        public static bool isAskPrintMessage = true;
         public static bool isLoyaltyActivated = false;
         public static bool isShowPrevesDue = true;
         public static bool isShowPrevesDueIntoSaleForm = true;
@@ -47,7 +41,7 @@ namespace Krypton_Toolkit_Demo.Configurations
         public static bool LineDiscountShow = true;
         public static string invoiceBranchDumyCode = "I";
         public static bool isMainBarnch = false;
-        public static string  invoiceBranchCode;
+        public static string invoiceBranchCode;
 
         public static bool FirstItemFistShow = false;
 
@@ -55,8 +49,8 @@ namespace Krypton_Toolkit_Demo.Configurations
         public static bool isShowGrossAmount = false;
         public static bool isPaymentFormOpenWhenAddButtonClick = false;
         public static bool isTotalLineDiscountPrint = true;
-      
-       // public static string ConnectionString = @"server=145.14.152.51;user id=u913025093_mul;database=u913025093_mul;password='Mul@1107';default command timeout=1000";
+
+        // public static string ConnectionString = @"server=145.14.152.51;user id=u913025093_mul;database=u913025093_mul;password='Mul@1107';default command timeout=1000";
         //central_point //mul_system_online_check
         public static string ConnectionString = @"server=127.0.0.1;user id=root;database=ideagen;default command timeout=1000";
     }

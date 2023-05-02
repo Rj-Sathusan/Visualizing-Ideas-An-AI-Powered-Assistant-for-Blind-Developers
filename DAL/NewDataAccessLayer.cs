@@ -3,20 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Krypton_Toolkit_Demo.DAL
+namespace IdeaGen.DAL
 {
     class NewDataAccessLayer : DAL.function_
     {
 
         public static MySqlConnection sqlconnection;
         public static DataTable comtable;
-       // sqlconnection = new MySqlConnection(Config.ConnectionString);
-       // public function_ fun = new function_();
+        // sqlconnection = new MySqlConnection(Config.ConnectionString);
+        // public function_ fun = new function_();
         //public DataAccessLayer()
         //{
         //   //sqlconnection = new MySqlConnection(@"server=127.0.0.1;user id=root;database=hardwear");
@@ -51,7 +48,7 @@ namespace Krypton_Toolkit_Demo.DAL
         {
             sqlconnection = new MySqlConnection(Configurations.Config.ConnectionString);
 
-           
+
             try
             {
                 if (sqlconnection.State == ConnectionState.Open)
@@ -105,10 +102,10 @@ namespace Krypton_Toolkit_Demo.DAL
 
 
                 MySqlDataAdapter da = new MySqlDataAdapter(sqlcmd);
-               
-               // OpenConnection();
+
+                // OpenConnection();
                 da.Fill(dt);
-               // CloseConnection();
+                // CloseConnection();
                 return dt;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); return dt; }
@@ -139,7 +136,7 @@ namespace Krypton_Toolkit_Demo.DAL
                 }
 
                 MySqlDataAdapter da = new MySqlDataAdapter(sqlcmd);
-               
+
 
                 da.Fill(dt);
 

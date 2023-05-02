@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Krypton_Toolkit_Demo
+namespace IdeaGen
 {
     static class Program
     {
@@ -16,7 +13,7 @@ namespace Krypton_Toolkit_Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sign_Up());
+            Application.Run(new Front());
         }
     }
 }
