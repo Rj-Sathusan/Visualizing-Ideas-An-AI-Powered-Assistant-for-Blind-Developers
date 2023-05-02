@@ -18,7 +18,7 @@ diversity in the professional landscape. <b>[In Progress...]</b>
 - Create professional PowerPoint presentations,Proposels with suitable images using voice commands.
 - Ability to automatically join meetings
 - Communicate and get information by enabling contact with anyone.
-- Navigate through the presentation using voice commands such as "Start Presentation", "Next Slide", "Previous Slide", and "Close".
+- Navigate through the presentation using voice commands such as "Start Presentation", "Next", "Slide", and "Close".
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 
  <img src="Resources/Readme2.png" alt="Project Banner" >
