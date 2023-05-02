@@ -1,0 +1,12 @@
+google-cloud-speech==2.5.0
+beautifulsoup4==4.10.0
+selenium==3.141.0
+gpt-2-simple==0.7.1
+python-pptx==0.6.19
+requests==2.26.0
+pyttsx3==2.90
+google-auth==2.1.1
+google-auth-oauthlib==0.4.4
+google-auth-httplib2==0.1.0
+google-api-python-client==2.0.2
+mega.py==1.0.11
