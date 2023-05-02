@@ -55,6 +55,9 @@ Follow the voice prompts to describe your concept and start creating your presen
 - Test the effectiveness and usability of the suggested system.
 - Create thorough project documentation.
 
+## Motivation
+Blind developers face many challenges when working on projects, especially when it comes to creating presentations and reports . They struggle to generate and communicate their thoughts effectively because there aren't any visual tools available. By bridging this gap and giving blind developers a simple-to-use tool to help them visualize their ideas and thoughts, the creation of an AI voice assistant will contribute to closing the accessibility gap. This project is driven by the desire to give blind professionals equal chances in the software development industry and to increase their productivity and efficiency.
+
 ## Future Development
 - Adding more features to enhance accessibility and productivity for blind developers.
 - Improving the accuracy and efficiency of the ChatGpt integration.
