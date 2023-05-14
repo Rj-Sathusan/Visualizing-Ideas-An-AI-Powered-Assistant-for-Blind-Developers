@@ -3,11 +3,16 @@ using System;
 
 namespace IdeaGen
 {
-    public partial class Front : KryptonForm
+    public partial class Front : KryptonForm  
     {
+        DAL.function_ fun = new DAL.function_();
+
         public Front()
         {
             InitializeComponent();
+
+            
+
         }
 
 
@@ -38,21 +43,10 @@ namespace IdeaGen
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            // Create an instance of the other form
-            Sign_Up frontForm = new Sign_Up();
+            
 
-            // Animate the current form to slide out to the left
-            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_POSITIVE);
-
-            // Hide the current form
-            this.Hide();
-
-
-            // Animate the other form to slide in from the right
-            WinAPI.AnimateWindow(frontForm.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_NEGATIVE);
-
-            // Show the other form
-            frontForm.Show();
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Sign_Up());
         }
 
 

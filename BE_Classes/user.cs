@@ -12,7 +12,6 @@ namespace IdeaGen.BE
         private string Your_name;
         private string Gmail;
         private string password;
-        private long shift_id;
 
         //Start---------------Getter/setter-----------------------------
 
@@ -43,13 +42,9 @@ namespace IdeaGen.BE
             get { return this.password; }
             set { this.password = value; }
         }
-        public long SHIFT_ID
-        {
-            get { return this.shift_id; }
-            set { this.shift_id = value; }
-        }
+       
 
-        //END---------------Getter/setter-----------------------------
+
 
         //Start---------------------SAVE------------------Proceture---------------
 
@@ -100,7 +95,6 @@ namespace IdeaGen.BE
         }
 
 
-        //END-------------------------------SAVE------------------Proceture----------------------
 
 
         //Start---------------------------EDIT----------------Proceture-----------------------
@@ -123,8 +117,7 @@ namespace IdeaGen.BE
                 param[4].Value = Gmail;
                 param[5] = new MySqlParameter("@password0", MySqlDbType.VarChar, 60);
                 param[5].Value = password;
-                param[6] = new MySqlParameter("@shift_id0", MySqlDbType.Int64);
-                param[6].Value = shift_id;
+              
                 if (OpenConnection())
                 {
                     if (ExecuteCommand(" User_Edit", param))
@@ -157,7 +150,6 @@ namespace IdeaGen.BE
         }
 
 
-        //END----------------------------------------------EDIT-------------------------Proceture------------
 
 
         //Start-------------------------DELETE----------------------Proceture------------------
@@ -202,9 +194,8 @@ namespace IdeaGen.BE
         }
 
 
-        //END------------------------------------DELETE--------------------Proceture-------------------
 
-        // ============================================ Get all details in Shop ==============================//////
+        // ============================================ Get  details  ==============================//////
 
         public DataTable GetUser()
         {
@@ -225,18 +216,18 @@ namespace IdeaGen.BE
             BindGrid(dgv, GetUser());
         }
 
-        //Start-----------------constructer-------------------------------
 
 
-        //End-----------------------constructer-------------------------------
 
         public User()
         {
         }
 
+
+        // Get forgot Password from DB use gmail
         public string GetPassword(string email)
         {
-            string password = "";
+            
 
             MySqlParameter[] param = new MySqlParameter[2];
 
@@ -259,7 +250,7 @@ namespace IdeaGen.BE
 
         //Start-----------------constructer-------------------------------
 
-        public User(int id, string User_name, string Your_name, string Gmail, string password, long shift_id)
+        public User(int id, string User_name, string Your_name, string Gmail, string password)
         {
 
             this.id = id;
@@ -267,10 +258,8 @@ namespace IdeaGen.BE
             this.Your_name = Your_name;
             this.Gmail = Gmail;
             this.password = password;
-            this.shift_id = shift_id;
 
 
-            //End-----------------------constructer-------------------------------        
         }
 
     }

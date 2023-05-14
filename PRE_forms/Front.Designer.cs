@@ -42,20 +42,20 @@
             // 
             // kryptonPalette1
             // 
-            this.kryptonPalette1.ButtonSpecs.FormClose.Image = global::Krypton_Toolkit_Demo.Properties.Resources.mc_red;
-            this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed = global::Krypton_Toolkit_Demo.Properties.Resources.sign_error_icon;
-            this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking = global::Krypton_Toolkit_Demo.Properties.Resources.sign_error_icon;
+            this.kryptonPalette1.ButtonSpecs.FormClose.Image = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormClose.Image")));
+            this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed")));
+            this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking")));
             this.kryptonPalette1.ButtonSpecs.FormMax.AllowInheritImage = false;
-            this.kryptonPalette1.ButtonSpecs.FormMax.Image = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedNormal = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedPressed = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedTracking = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageNormal = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImagePressed = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
-            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageTracking = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
+            this.kryptonPalette1.ButtonSpecs.FormMax.Image = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.Image")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedNormal = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedNormal")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedPressed = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedPressed")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedTracking = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageCheckedTracking")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageNormal = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageNormal")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImagePressed = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImagePressed")));
+            this.kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageTracking = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMax.ImageStates.ImageTracking")));
             this.kryptonPalette1.ButtonSpecs.FormMin.AllowInheritImage = false;
-            this.kryptonPalette1.ButtonSpecs.FormMin.Image = global::Krypton_Toolkit_Demo.Properties.Resources.mc_green;
-            this.kryptonPalette1.ButtonSpecs.FormRestore.Image = global::Krypton_Toolkit_Demo.Properties.Resources.mc_yellw;
+            this.kryptonPalette1.ButtonSpecs.FormMin.Image = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormMin.Image")));
+            this.kryptonPalette1.ButtonSpecs.FormRestore.Image = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.FormRestore.Image")));
             this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -229,7 +229,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.Text = "IDEAGEN";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

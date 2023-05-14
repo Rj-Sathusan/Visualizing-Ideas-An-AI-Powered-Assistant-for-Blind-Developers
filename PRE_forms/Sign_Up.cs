@@ -11,11 +11,22 @@ namespace IdeaGen
 {
     public partial class Sign_Up : KryptonForm
     {
-
+        private int id;
+        private string User_name;
+        private string Your_name;
+        private string Gmail;
+        private string password;
         private int expectedOTP;
+        private string s_name;
+        private string s_mail;
+        private string r_mail;
+        private string sub;
+        private string msg;
+        private int randomNumber;
 
-        BE.User User;
 
+        // Create a new instance of the User class
+        BE.User user = new BE.User();
         DAL.function_ fun = new DAL.function_();
         DAL.NewDataAccessLayer Ndal = new DAL.NewDataAccessLayer();
 
@@ -30,9 +41,10 @@ namespace IdeaGen
         public int GenerateRandomNumber()
         {
             Random rand = new Random();
-            int randomNumber = rand.Next(1000, 9999);
+            randomNumber = rand.Next(1000, 9999);
             return randomNumber;
         }
+
 
         private bool ValidateInputs()
         {
@@ -100,64 +112,29 @@ namespace IdeaGen
             MessageBox.Show("Message");
         }
 
-        public static async Task Mail(string s_name, string s_mail, string r_mail, string sub, string msg)
-        {
-            string url = "https://cntreon.000webhostapp.com/";
-            var content = new FormUrlEncodedContent(new[]
-        {
-            new KeyValuePair<string, string>("sender_name", s_name),
-            new KeyValuePair<string, string>("sender_email", s_mail + "@gmail.com"),
-            new KeyValuePair<string, string>("receiver_email", r_mail),
-            new KeyValuePair<string, string>("subject", sub),
-            new KeyValuePair<string, string>("message", msg)
-        });
-
-            using (var client = new HttpClient())
-            {
-                var response = await client.PostAsync(url, content);
-
-                Console.WriteLine(response.StatusCode);
-                Console.WriteLine(await response.Content.ReadAsStringAsync());
-            }
-        }
-
-
-
+      
 
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Create an instance of the other form
-            Front frontForm = new Front();
-
-            // Animate the current form to slide out to the left
-            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_POSITIVE);
-
-            // Hide the current form
-            this.Hide();
-
-
-            // Animate the other form to slide in from the right
-            WinAPI.AnimateWindow(frontForm.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_NEGATIVE);
-
-            // Show the other form
-            frontForm.Show();
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Knowdlage());
         }
 
         private async void pictureBox4_Click(object sender, EventArgs e)
         {
             if (ValidateInputs())
             {
+                //send OTP and Call mail function
+                 otp_txt.Visible = true;
+                 randomNumber = GenerateRandomNumber();
 
-                otp_txt.Visible = true;
-                int randomNumber = GenerateRandomNumber();
-
-                string s_name = "IdeaGen_Official";
-                string s_mail = "IdeaGen";
-                string r_mail = gmail_txt.Text;
-                string sub = "Verification Code for Your Account";
-                string msg = "Dear User,\n\nPlease use the following verification code to complete your account registration: " + randomNumber + "\n\nThank you,\nThe Team";
-                await Mail(s_name, s_mail, r_mail, sub, msg);
+                 s_name = "IdeaGen_Official";
+                 s_mail = "IdeaGen";
+                 r_mail = gmail_txt.Text;
+                 sub = "Verification Code for Your Account";
+                 msg = "Dear User,\n\nPlease use the following verification code to complete your account registration: " + randomNumber + "\n\nThank you,\nThe Team";
+                await fun.Mail (s_name, s_mail, r_mail, sub, msg);
 
                 // Set the expected OTP value
                 expectedOTP = randomNumber;
@@ -180,7 +157,6 @@ namespace IdeaGen
             if (otp_txt.Text.Length >= 4)
             {
 
-
                 // Retrieve the entered OTP value
                 string enteredOTP = otp_txt.Text;
 
@@ -191,15 +167,15 @@ namespace IdeaGen
                 if (enteredOTP == Convert.ToString(expectedOTP))
                 {
 
-                    // Create a new instance of the User class
-                    BE.User user = new BE.User();
-
                     // Set the properties of the user object using the values entered in the form
-                    user.ID = 0;
-                    user.USER_NAME = user_name_txt.Text;
-                    user.YOUR_NAME = your_name_txt.Text;
-                    user.GMAIL = gmail_txt.Text;
-                    user.PASSWORD = password_txt.Text;
+                    id = 0; //Id auto increament
+                    User_name = user_name_txt.Text;
+                    Your_name = your_name_txt.Text;
+                    Gmail = gmail_txt.Text;
+                    password = password_txt.Text;
+
+                    //Set values user class
+                    BE.User newUser = new BE.User(id, User_name, Your_name, Gmail, password);
 
                     // Call the SaveUser method to save the user data to the database
                     bool result = user.SaveUser();
@@ -207,17 +183,8 @@ namespace IdeaGen
                     // Display a message to the user based on the result of the SaveUser method
                     if (result)
                     {
-                        // Animate the current form to slide out to the left
-                        WinAPI.AnimateWindow(this.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_NEGATIVE);
-
-                        // Hide the current form
-                        this.Hide();
-
-                        // Animate the other form to slide in from the right
-                        WinAPI.AnimateWindow(frontForm.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_POSITIVE);
-
-                        // Show the other form
-                        frontForm.Show();
+                        // Call the helper method to animate the transition between the current form and the new instance of the Front form
+                        fun.AnimateFormTransition(this, new Knowdlage());
 
                         MessageBox.Show("Registration completed successfully!", "Success");
 
@@ -226,8 +193,6 @@ namespace IdeaGen
                     {
                         MessageBox.Show("Error saving data.");
                     }
-
-
 
                 }
                 else

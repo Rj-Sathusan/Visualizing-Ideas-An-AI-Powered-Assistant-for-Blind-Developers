@@ -9,6 +9,7 @@ namespace IdeaGen
 {
     public partial class Login : KryptonForm
     {
+        DAL.function_ fun;
         public Login()
         {
             InitializeComponent();
@@ -55,37 +56,11 @@ namespace IdeaGen
             MessageBox.Show("Message");
         }
 
-        private async void pictureBox4_Click(object sender, EventArgs e)
-        {
-            string s_name = "Krypton_Toolkit_Demo_Official";
-            string s_mail = "Krypton_Toolkit_Demo";
-            string r_mail = "www.rjsathusan@gmail.com";
-            string sub = "Verification Mail";
-            string msg = "Test";
-
-            await Mail(s_name, s_mail, r_mail, sub, msg);
-
-            // Create an instance of the other form
-            Knowdlage frontForm = new Knowdlage();
-
-            // Animate the current form to slide out to the left
-            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_NEGATIVE);
-
-            // Hide the current form
-            this.Hide();
-
-
-            // Animate the other form to slide in from the right
-            WinAPI.AnimateWindow(frontForm.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_POSITIVE);
-
-            // Show the other form
-            frontForm.Show(); ;
-
-        }
+          
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+           
         }
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -96,21 +71,8 @@ namespace IdeaGen
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Create an instance of the other form
-            Front frontForm = new Front();
-
-            // Animate the current form to slide out to the left
-            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_POSITIVE);
-
-            // Hide the current form
-            this.Hide();
-
-
-            // Animate the other form to slide in from the right
-            WinAPI.AnimateWindow(frontForm.Handle, 300, WinAPI.AW_SLIDE | WinAPI.AW_HOR_NEGATIVE);
-
-            // Show the other form
-            frontForm.Show();
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Knowdlage());
         }
 
         public static async Task Mail(string s_name, string s_mail, string r_mail, string sub, string msg)
@@ -132,6 +94,17 @@ namespace IdeaGen
                 Console.WriteLine(response.StatusCode);
                 Console.WriteLine(await response.Content.ReadAsStringAsync());
             }
+        }
+
+       
+      
+        private  void login(object sender, EventArgs e)
+        {
+
+
+
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Knowdlage());
         }
 
 

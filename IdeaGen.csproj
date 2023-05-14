@@ -55,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BE_Classes\user.cs" />
-    <Compile Include="BE_Classes\WinAPI.cs" />
     <Compile Include="Configurations\Config.cs" />
     <Compile Include="DAL\function_.cs" />
     <Compile Include="DAL\NewDataAccessLayer.cs" />
