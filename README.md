@@ -14,10 +14,10 @@ This project aims to create an AI voice assistant for blind engineers, helping t
 
 ## Features
 - Access unlimited knowledge through conversations using the ChatGpt integration.
+- Communicate and get information by enabling contact with anyone.
 - Create professional PowerPoint presentations,Proposels with suitable images using voice commands.
 - Ability to automatically join meetings
-- Communicate and get information by enabling contact with anyone.
-- Navigate through the presentation using voice commands such as "Start Presentation", "Next", "Slide", and "Close".
+- Navigate through the presentation using voice commands .
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 
  <img src="Resources/Readme2.png" alt="Project Banner" >
