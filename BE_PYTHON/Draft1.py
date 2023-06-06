@@ -1,14 +1,45 @@
-import os
-import subprocess
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from element_manager import *
+import keyboard
+import speech_recognition as sr
 
-# Define the command to start Chrome with remote debugging
-chrome_cmd = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
-chrome_args = '-remote-debugging-port=9235 -user-data-dir=C:/Users/Rj_Sathusan/Desktop/Final Project/Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers/chromeprofile --window-size=50,50'
-chrome_full_cmd = f'"{chrome_cmd}" {chrome_args}'
+recognizer = sr.Recognizer()
+microphone = sr.Microphone()
+is_listening = False
 
-# Start Chrome with remote debugging using subprocess
-chrome_proc = subprocess.Popen(chrome_full_cmd)
+def start_voice_recognition():
+    global is_listening
+    is_listening = True
+    print("Listening...")
+
+    with microphone as source:
+        audio = recognizer.listen(source)
+
+    try:
+        recognized_text = recognizer.recognize_google(audio)
+        if recognized_text:
+            print("Recognized text:", recognized_text)
+        else:
+            print("No speech input detected")
+    except sr.UnknownValueError:
+        print("Unable to recognize speech")
+    except sr.RequestError as e:
+        print("Error occurred: {0}".format(e))
+    
+    if is_listening:
+        start_voice_recognition()
+
+def stop_voice_recognition():
+    global is_listening
+    is_listening = False
+    print("Voice recognition stopped")
+
+def on_key_press(event):
+    if event.name == 'ctrl':
+        if is_listening:
+            stop_voice_recognition()
+        else:
+            start_voice_recognition()
+
+keyboard.on_press(on_key_press)
+
+while True:
+    pass

@@ -9,7 +9,7 @@ namespace IdeaGen
 {
     public partial class Login : KryptonForm
     {
-        DAL.function_ fun;
+        DAL.function_ fun = new DAL.function_();
         public Login()
         {
             InitializeComponent();
@@ -72,7 +72,7 @@ namespace IdeaGen
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             // Call the helper method to animate the transition between the current form and the new instance of the Front form
-            fun.AnimateFormTransition(this, new Knowdlage());
+            fun.AnimateFormTransition(this, new Sign_Up());
         }
 
         public static async Task Mail(string s_name, string s_mail, string r_mail, string sub, string msg)

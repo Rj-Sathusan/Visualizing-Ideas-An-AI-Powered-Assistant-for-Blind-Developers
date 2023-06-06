@@ -118,7 +118,7 @@ namespace IdeaGen
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             // Call the helper method to animate the transition between the current form and the new instance of the Front form
-            fun.AnimateFormTransition(this, new Knowdlage());
+            fun.AnimateFormTransition(this, new Front());
         }
 
         private async void pictureBox4_Click(object sender, EventArgs e)
@@ -207,6 +207,12 @@ namespace IdeaGen
 
                 }
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Login());
         }
 
 

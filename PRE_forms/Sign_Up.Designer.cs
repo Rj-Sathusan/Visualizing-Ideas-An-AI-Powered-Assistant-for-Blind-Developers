@@ -32,17 +32,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_Up));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.back_btn = new System.Windows.Forms.PictureBox();
-            this.save_btn = new System.Windows.Forms.PictureBox();
             this.user_name_txt = new System.Windows.Forms.TextBox();
             this.your_name_txt = new System.Windows.Forms.TextBox();
             this.password_txt = new System.Windows.Forms.TextBox();
             this.gmail_txt = new System.Windows.Forms.TextBox();
             this.otp_txt = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.back_btn = new System.Windows.Forms.PictureBox();
+            this.save_btn = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.save_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -159,41 +160,6 @@
             this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 607);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // back_btn
-            // 
-            this.back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_btn.Image = ((System.Drawing.Image)(resources.GetObject("back_btn.Image")));
-            this.back_btn.Location = new System.Drawing.Point(481, 542);
-            this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(126, 42);
-            this.back_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.back_btn.TabIndex = 2;
-            this.back_btn.TabStop = false;
-            this.back_btn.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // save_btn
-            // 
-            this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_btn.Image = ((System.Drawing.Image)(resources.GetObject("save_btn.Image")));
-            this.save_btn.Location = new System.Drawing.Point(676, 541);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(126, 42);
-            this.save_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.save_btn.TabIndex = 2;
-            this.save_btn.TabStop = false;
-            this.save_btn.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // user_name_txt
             // 
             this.user_name_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -237,12 +203,62 @@
             this.otp_txt.Visible = false;
             this.otp_txt.TextChanged += new System.EventHandler(this.otp_txt_TextChanged);
             // 
+            // back_btn
+            // 
+            this.back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_btn.Image = ((System.Drawing.Image)(resources.GetObject("back_btn.Image")));
+            this.back_btn.Location = new System.Drawing.Point(482, 542);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(126, 42);
+            this.back_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.back_btn.TabIndex = 2;
+            this.back_btn.TabStop = false;
+            this.back_btn.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // save_btn
+            // 
+            this.save_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save_btn.Image = ((System.Drawing.Image)(resources.GetObject("save_btn.Image")));
+            this.save_btn.Location = new System.Drawing.Point(731, 542);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(126, 42);
+            this.save_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.save_btn.TabIndex = 2;
+            this.save_btn.TabStop = false;
+            this.save_btn.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(922, 607);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(827, 37);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(73, 18);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "User Login";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(912, 585);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.otp_txt);
             this.Controls.Add(this.gmail_txt);
             this.Controls.Add(this.password_txt);
@@ -263,9 +279,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IDEAGEN";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.save_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,6 +299,7 @@
         private System.Windows.Forms.TextBox password_txt;
         private System.Windows.Forms.TextBox gmail_txt;
         private System.Windows.Forms.TextBox otp_txt;
+        private System.Windows.Forms.LinkLabel linkLabel1;
 
     }
 }
