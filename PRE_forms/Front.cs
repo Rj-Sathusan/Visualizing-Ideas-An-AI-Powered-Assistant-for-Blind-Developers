@@ -1,5 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using System;
+using System.Diagnostics;
 
 namespace IdeaGen
 {
@@ -47,6 +48,15 @@ namespace IdeaGen
 
             // Call the helper method to animate the transition between the current form and the new instance of the Front form
             fun.AnimateFormTransition(this, new Sign_Up());
+        }
+
+        private void about_btn_Click(object sender, EventArgs e)
+        {
+            // Specify the URL you want to open
+            string url = "https://github.com/Rj-Sathusan/Visualizing-Ideas-An-AI-Powered-Assistant-for-Blind-Developers/blob/main/README.md";
+
+            // Open the URL in the default web browser
+            Process.Start(url);
         }
 
 

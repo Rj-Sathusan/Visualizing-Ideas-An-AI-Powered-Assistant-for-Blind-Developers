@@ -33,7 +33,9 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.backup_btn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backup_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -158,12 +160,23 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(4, 389);
+            this.textBox1.Location = new System.Drawing.Point(4, 356);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(822, 196);
+            this.textBox1.Size = new System.Drawing.Size(822, 236);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Can Type Here ...";
+            // 
+            // backup_btn
+            // 
+            this.backup_btn.Image = ((System.Drawing.Image)(resources.GetObject("backup_btn.Image")));
+            this.backup_btn.Location = new System.Drawing.Point(786, 548);
+            this.backup_btn.Name = "backup_btn";
+            this.backup_btn.Size = new System.Drawing.Size(40, 35);
+            this.backup_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backup_btn.TabIndex = 2;
+            this.backup_btn.TabStop = false;
+            this.backup_btn.Click += new System.EventHandler(this.backup_btn_Click);
             // 
             // Knowdlage
             // 
@@ -171,6 +184,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(827, 585);
+            this.Controls.Add(this.backup_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,8 +211,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.Text = "IDEAGEN";
+            this.TextExtra = "Esoft";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backup_btn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +225,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox backup_btn;
     }
 }

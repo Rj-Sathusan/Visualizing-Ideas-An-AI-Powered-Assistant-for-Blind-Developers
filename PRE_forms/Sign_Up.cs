@@ -123,18 +123,20 @@ namespace IdeaGen
 
         private async void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (ValidateInputs())
+             if (ValidateInputs())
             {
                 //send OTP and Call mail function
                  otp_txt.Visible = true;
                  randomNumber = GenerateRandomNumber();
 
                  s_name = "IdeaGen_Official";
-                 s_mail = "IdeaGen";
+                 //s_mail = "IdeaGen";
                  r_mail = gmail_txt.Text;
                  sub = "Verification Code for Your Account";
                  msg = "Dear User,\n\nPlease use the following verification code to complete your account registration: " + randomNumber + "\n\nThank you,\nThe Team";
-                await fun.Mail (s_name, s_mail, r_mail, sub, msg);
+                //await fun.Mail (s_name, s_mail, r_mail, sub, msg);
+                fun.SendEmail(r_mail, sub, msg);
+
 
                 // Set the expected OTP value
                 expectedOTP = randomNumber;

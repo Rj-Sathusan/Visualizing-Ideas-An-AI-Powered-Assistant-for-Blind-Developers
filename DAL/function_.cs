@@ -10,6 +10,9 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Net.Mail;
+using System.Net;
+
 
 
 
@@ -138,24 +141,30 @@ namespace IdeaGen.DAL
 
 
 
-        public  async Task Mail(string s_name, string s_mail, string r_mail, string sub, string msg)
+        public void SendEmail(string recipientEmail, string subject, string body)
         {
-            string url = "https://cntreon.000webhostapp.com/";
-            var content = new FormUrlEncodedContent(new[]
-        {
-            new KeyValuePair<string, string>("sender_name", s_name),
-            new KeyValuePair<string, string>("sender_email", s_mail + "@gmail.com"),
-            new KeyValuePair<string, string>("receiver_email", r_mail),
-            new KeyValuePair<string, string>("subject", sub),
-            new KeyValuePair<string, string>("message", msg)
-        });
+            string email = "www.rjsathusan@gmail.com";
+            string appPassword = "vimapnlymjmeveww";
 
-            using (var client = new HttpClient())
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress(email);
+            mail.To.Add(recipientEmail);
+            mail.Subject = subject;
+            mail.Body = body;
+
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Credentials = new NetworkCredential(email, appPassword);
+            smtpClient.EnableSsl = true;
+
+            try
             {
-                var response = await client.PostAsync(url, content);
-
-                Console.WriteLine(response.StatusCode);
-                Console.WriteLine(await response.Content.ReadAsStringAsync());
+                smtpClient.Send(mail);
+                //Console.WriteLine("Email sent successfully.");
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error sending email: " + ex.Message);
             }
         }
 

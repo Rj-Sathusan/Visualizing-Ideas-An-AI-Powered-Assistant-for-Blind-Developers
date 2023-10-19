@@ -231,7 +231,7 @@ namespace IdeaGen.BE
 
             MySqlParameter[] param = new MySqlParameter[2];
 
-            param[0] = new MySqlParameter("@Email", MySqlDbType.VarChar, 60);
+            param[0] = new MySqlParameter("@gmail0", MySqlDbType.VarChar, 60);
             param[0].Value = email;
 
             param[1] = new MySqlParameter("@Password", MySqlDbType.VarChar, 60);

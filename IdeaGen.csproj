@@ -58,6 +58,12 @@
     <Compile Include="Configurations\Config.cs" />
     <Compile Include="DAL\function_.cs" />
     <Compile Include="DAL\NewDataAccessLayer.cs" />
+    <Compile Include="PRE_forms\Forgot_password_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRE_forms\Forgot_password_form.Designer.cs">
+      <DependentUpon>Forgot_password_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PRE_forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,14 +88,17 @@
     <Compile Include="PRE_forms\Knowdlage.Designer.cs">
       <DependentUpon>Knowdlage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRE_forms\Form2.cs">
+    <Compile Include="PRE_forms\Back_up_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRE_forms\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="PRE_forms\Back_up_form.Designer.cs">
+      <DependentUpon>Back_up_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PRE_forms\Forgot_password_form.resx">
+      <DependentUpon>Forgot_password_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PRE_forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,8 +111,8 @@
     <EmbeddedResource Include="PRE_forms\Knowdlage.resx">
       <DependentUpon>Knowdlage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRE_forms\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="PRE_forms\Back_up_form.resx">
+      <DependentUpon>Back_up_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

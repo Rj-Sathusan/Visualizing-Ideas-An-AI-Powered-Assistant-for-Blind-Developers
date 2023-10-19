@@ -5,6 +5,8 @@ namespace IdeaGen
 {
     public partial class Knowdlage : KryptonForm
     {
+        DAL.function_ fun = new DAL.function_();
+
         public Knowdlage()
         {
             InitializeComponent();
@@ -34,6 +36,12 @@ namespace IdeaGen
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void backup_btn_Click(object sender, EventArgs e)
+        {
+            // Call the helper method to animate the transition between the current form and the new instance of the Front form
+            fun.AnimateFormTransition(this, new Back_up_form());
         }
     }
 }
