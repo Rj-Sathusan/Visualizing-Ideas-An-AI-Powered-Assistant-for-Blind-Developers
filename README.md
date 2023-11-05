@@ -7,10 +7,13 @@
 Visualizing Ideas AI Voice Assistant for Blind Developers </h1>
 
 </div> 
-This project aims to create an AI voice assistant for blind engineers, helping them visualize concepts and create PowerPoint presentations and reports using voice commands. By enhancing accessibility and promoting collaboration, it fosters inclusivity and diversity in the professional landscape
+This project aims to create an AI assistant for blind engineers, helping them visualize concepts and create PowerPoint presentations and reports using voice commands. By enhancing accessibility and promoting collaboration, it fosters inclusivity and diversity in the professional landscape
 <b>[In Progress...]</b>
 
 <img src="Resources/Readme1.png" alt="Project Banner" >
+
+## Motivation
+Blind developers face many challenges when working on projects, especially when it comes to creating presentations and reports . They struggle to generate and communicate their thoughts effectively because there aren't any visual tools available. By bridging this gap and giving blind developers a simple-to-use tool to help them visualize their ideas and thoughts, the creation of an AI voice assistant will contribute to closing the accessibility gap. This project is driven by the desire to give blind professionals equal chances in the software development industry and to increase their productivity and efficiency.
 
 ## Features
 - Access unlimited knowledge through conversations using the ChatGpt integration.
@@ -54,8 +57,6 @@ Follow the voice prompts to describe your concept and start creating your presen
 - Test the effectiveness and usability of the suggested system.
 - Create thorough project documentation.
 
-## Motivation
-Blind developers face many challenges when working on projects, especially when it comes to creating presentations and reports . They struggle to generate and communicate their thoughts effectively because there aren't any visual tools available. By bridging this gap and giving blind developers a simple-to-use tool to help them visualize their ideas and thoughts, the creation of an AI voice assistant will contribute to closing the accessibility gap. This project is driven by the desire to give blind professionals equal chances in the software development industry and to increase their productivity and efficiency.
 
 ## Future Development
 - Adding more features to enhance accessibility and productivity for blind developers.
