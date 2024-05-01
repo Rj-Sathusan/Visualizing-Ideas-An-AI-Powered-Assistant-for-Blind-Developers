@@ -21,8 +21,9 @@ Blind developers face many challenges when working on projects, especially when 
 - Ability to automatically join meetings
 - Navigate through the presentation using voice commands .
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
+ <img src="Resources/image01.png" alt="Project Banner" >
+ <img src="Resources/image02.png" alt="Project Banner" >
 
- <img src="Resources/Readme2.png" alt="Project Banner" >
 
 ## Technologies Used
 - Python 3.8 or higher and C# 8 or higher
