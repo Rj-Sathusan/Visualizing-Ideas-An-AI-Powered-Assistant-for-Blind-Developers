@@ -16,7 +16,7 @@ Blind developers face many challenges when working on projects, especially when 
 
 ## Features
 - Access unlimited knowledge through conversations using the ChatGpt integration.
-- Communicate and get information by enabling contact with anyone [zoom , mail].
+- Communicate and get information by enabling contact with anyone [ Auto - zoom , mail].
 - Create professional PowerPoint presentations,Proposels with suitable images using voice commands.
 - Ability to automatically join meetings
 - Navigate through the presentation using voice commands .
