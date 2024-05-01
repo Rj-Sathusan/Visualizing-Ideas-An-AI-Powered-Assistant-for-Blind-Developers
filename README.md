@@ -15,12 +15,13 @@ This project aims to create an AI assistant for blind engineers, helping them vi
 Blind developers face many challenges when working on projects, especially when it comes to creating presentations and reports . They struggle to generate and communicate their thoughts effectively because there aren't any visual tools available. By bridging this gap and giving blind developers a simple-to-use tool to help them visualize their ideas and thoughts, the creation of an AI voice assistant will contribute to closing the accessibility gap. This project is driven by the desire to give blind professionals equal chances in the software development industry and to increase their productivity and efficiency.
 
 ## Features
-- Access unlimited knowledge through conversations using the ChatGpt integration.
+- Create professional PowerPoint presentations with suitable images using voice commands.
 - Communicate and get information by enabling contact with anyone [ Auto - zoom , mail].
-- Create professional PowerPoint presentations,Proposels with suitable images using voice commands.
+- Access unlimited knowledge through voice conversations using the ChatGpt integration.
 - Ability to automatically join meetings
 - Navigate through the presentation using voice commands .
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
+- Utilize a backup plan employing Mega cloud storage and OTP security verification
  <img src="Resources/image01.png" alt="Project Banner" >
  <img src="Resources/image02.png" alt="Project Banner" >
 
