@@ -22,8 +22,8 @@ Blind developers face many challenges when working on projects, especially when 
 - Navigate through the presentation using voice commands .
 - Receive audio feedback on the current slide being displayed to keep track of the presentation.
 - Utilize a backup plan employing Mega cloud storage and OTP security verification
- <img src="Resources/image01.png" alt="Project Banner" >
- <img src="Resources/image02.png" alt="Project Banner" >
+ <img src="Resources/image03.png" alt="Project Banner" >
+ <img src="Resources/Readme2.png" alt="Project Banner" >
 
 
 ## Technologies Used
